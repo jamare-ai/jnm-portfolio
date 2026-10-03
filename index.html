@@ -7,10 +7,86 @@
     body { font-family: Arial, sans-serif; padding: 40px; background: #f5f5f5; }
     h1 { font-size: 36px; }
     p { font-size: 20px; }
-  </style>
+  .about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.about-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.about-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.about-card p {
+  line-height: 1.6;
+}
+</style>
 </head>
 <body>
   <h1>Welcome to my portfolio</h1>
   <p>Software Developer • Army Veteran • AI Enthusiast</p>
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p class="about-intro">
+    I'm <strong>Jamare Noah McCallum</strong> — a Software Developer, U.S. Army Veteran, and AI Enthusiast
+    based in Council Bluffs, IA. I build clean, efficient, and scalable digital solutions with a focus
+    on web development, automation, and emerging AI technologies.
+  </p>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Software Developer</h3>
+      <p>
+        I specialize in building modern web applications using HTML, CSS, JavaScript, PHP, MySQL,
+        and Apache-based workflows. I enjoy creating tools that solve real problems and improve
+        everyday workflows.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>Army Veteran</h3>
+      <p>
+        Former U.S. Army NCO (Sergeant) with a background in logistics, leadership, and mission-focused
+        operations. My military experience shaped my discipline, teamwork, and problem‑solving mindset.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>AI Enthusiast</h3>
+      <p>
+        I explore machine learning, model training, and open‑source AI tools. I enjoy experimenting with
+        Hugging Face models, dataset preparation, and building small AI-driven applications.
+      </p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
